@@ -6,7 +6,7 @@ function Home() {
     const [searchQuery, setSearchQuery] = useState ("");
 
     const movies = [
-        {id: 1, title: "Version5", relase_date: "2020"},
+        {id: 1, title: "Version6", relase_date: "2020"},
         {id: 2, title: "Terminator", relase_date: "1999"},
         {id: 1, title: "The Matrix", relase_date: "1998"},
         ]
