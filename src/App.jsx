@@ -7,7 +7,7 @@ import NavBar from './components/NavBar'
 //56minutes// //this is the second one// //this is also exapmple// 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
         <main className='main-content'>
       <Routes>
@@ -15,7 +15,7 @@ function App() {
         <Route path='/favorites' element={<Favorites />} />
       </Routes>
     </main>
-    </div>
+    </MovieProvider>
   )  
 }
 
