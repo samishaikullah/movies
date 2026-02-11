@@ -20,7 +20,7 @@ export const MovieProvider = ({children}) => {
     }, [favorites])
 
 
-    const addToFavorties = (movie) => {
+    const addToFavorites = (movie) => {
         setFavorites(prev => [...prev, movie])
     }
 
@@ -35,7 +35,7 @@ export const MovieProvider = ({children}) => {
 
     const value = {
         favorites,
-        addToFavorties,
+        addToFavorites,
         removeFromFavorites,
         isFavorite
     }
