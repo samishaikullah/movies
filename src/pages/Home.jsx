@@ -56,7 +56,7 @@ const searchResults = await searchMovies(query);
              <button type="submit" className="search-button">Search</button>
         </form>
 
-        {error && <div className="error-message">{"error"}</div>}
+        {error && <div className="error-message">{error}</div>}
 
         {loading ? <div className="loading">Loading...</div> : 
             <div className="movies-grid">
