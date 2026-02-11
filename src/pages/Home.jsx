@@ -33,7 +33,8 @@ function Home() {
     
         setLoading(true)
     try {
-        const searchResults = await searchMovies(searchQuery)
+        const query = searchQuery.toLowerCase().trim();
+const searchResults = await searchMovies(query);
         setMovies(searchResults)
         setError(null)
     }catch (err) {
